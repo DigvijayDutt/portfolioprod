@@ -60,7 +60,7 @@ function App() {
         <div style={{zIndex:1, width:"100%", maxWidth:"820px", display:'flex', flexDirection:'column', alignItems:'flex-start', position:'absolute', top:"10vh"}}>
           <div>
             <h1 id='about' style={{position:'relative',left:'0'}}>About me:</h1>
-            <p>I am a 3rd-year B.Tech Computer Science student passionate about technology and innovation with 8 months of hands-on experience in AI/ML using Python , I have developed a strong foundation in machine learning concepts.<br/><br/>Additionally, I am skilled in the MERN stack for web development ,enabling me to create dynamic and responsive applications.<br/><br/> I actively pursue competitive programming in Python, honing problem-solving and algorithmic skills .<br/><br/>Eager to contribute and grow through challenging opportunities .</p>
+            <p>I am a 4th-year B.Tech Computer Science student passionate about technology and innovation with 8 months of hands-on experience in AI/ML using Python , I have developed a strong foundation in machine learning concepts.<br/><br/>Additionally, I am skilled in the MERN stack for web development ,enabling me to create dynamic and responsive applications.<br/><br/> I actively pursue competitive programming in Python, honing problem-solving and algorithmic skills .<br/><br/>Eager to contribute and grow through challenging opportunities .</p>
             <h3 >Experience: </h3>
               <img src="/intern.jpg"></img>
             <h3 >Education/Certifications: </h3>
