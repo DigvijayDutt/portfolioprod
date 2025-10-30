@@ -3,6 +3,7 @@ import './App.css'
 import Aurora from './assets/components/Aurora'
 import CardNav  from './assets/components/CardNav'
 import prfp from './assets/images/prfp.jpeg'
+import proj2 from './assets/images/proj2.jpg'
 import PDFViewer from './assets/components/pdfviewer'
 import ScrollStack, { ScrollStackItem } from './assets/components/ScrollStack'
 
@@ -57,23 +58,23 @@ function App() {
         ease="power3.out"
       />
       <body style={{display:"flex"}}>
-        <div style={{zIndex:1, width:"100%", maxWidth:"820px", display:'flex', flexDirection:'column', alignItems:'flex-start', position:'absolute', top:"10vh"}}>
+        <div style={{zIndex:1, width:"100%", maxWidth:"1000px", display:'flex', flexDirection:'column', alignItems:'flex-start', position:'absolute', top:"10vh"}}>
           <div>
             <h1 id='about' style={{position:'relative',left:'0'}}>About me:</h1>
             <p>I am a 4th-year B.Tech Computer Science student passionate about technology and innovation with 8 months of hands-on experience in AI/ML using Python , I have developed a strong foundation in machine learning concepts.<br/><br/>Additionally, I am skilled in the MERN stack for web development ,enabling me to create dynamic and responsive applications.<br/><br/> I actively pursue competitive programming in Python, honing problem-solving and algorithmic skills .<br/><br/>Eager to contribute and grow through challenging opportunities .</p>
             <h3 >Experience: </h3>
               <img src="/intern.jpg"></img>
             <h3 >Education/Certifications: </h3>
-            <div style={{display:"flex", flexDirection:"column",justifyContent:"center", alignItems:"center", maxWidth:"800px"}}>
+            <div style={{display:"flex", flexDirection:"row",justifyContent:"space-between", alignItems:"center", maxWidth:"100%"}}>
               <PDFViewer fileN='/cert1.pdf' />
               <PDFViewer fileN='/cert2.pdf' />
               <PDFViewer fileN='/udemy.pdf' />
             </div>
           </div>
-          <div>
+          <div style={{display:"flex", flexDirection:"column" , alignItems:"center", justifyContent: "center"}}>
             <h1 id='projects'>Projects:</h1>
             <h3 >Featured: (scroll here)</h3>
-            <div style={{ width: "100%", height: "300px", overflow: "hidden" ,position:'center'}}>
+            <div style={{ width: "100%", height: "300px", overflow: "hidden" ,position:'center' }}>
               <ScrollStack
                 className="custom-scroll-stack"
                 itemDistance={30}
@@ -94,9 +95,16 @@ function App() {
                 </ScrollStackItem>
 
                 <ScrollStackItem itemClassName="project-card">
-                  <div className="card-content" style={{ borderRadius: "1rem" }}>
-                    <h2>Featured Project 2</h2>
-                    <p>An ML pipeline with automated data validation using Great Expectations and MLflow tracking.</p>
+                  <div className="card-content" style={{ borderRadius: "1rem",  display:"flex", flexDirection:"row"}}>
+                    <div>
+                      <h2>Customer Churn Predictor + MLOps</h2>
+                      <p>An ML pipeline with automated data validation using Great Expectations and MLflow tracking.</p>
+                      <a target="_blank" href='https://www.linkedin.com/posts/duttdigvijay_machinelearning-customerchurn-streamlit-activity-7351201722591031310-qIyd'>Video Demo</a><br />
+                      <a target='_blank' href='https://github.com/DigvijayDutt/CustomerChurnPred'>Git hub</a>
+                    </div>
+                    <div style={{display:"flex",alignItems:"center"}}> 
+                      <img src={proj2} alt="" style={{maxWidth:"300px", maxHeight:"100px"}}/>
+                    </div>
                   </div>
                 </ScrollStackItem>
 
@@ -109,12 +117,13 @@ function App() {
               </ScrollStack>
             </div>            
             <h3 >Research: </h3>
-            <div style={{width:"100%"}}>
-              <PDFViewer fileN='/paper.pdf' />
+            <div style={{width:"80%"}}>
+              <PDFViewer fileN='/paper.pdf' maxHeight={"fit-content"}/>
             </div>
           </div>
-          <div>
+          <div style={{display:"flex", flexDirection:"column", alignItems:"center", width:"100%"}}>
             <h1 id='contact'>Contact:</h1>
+            <p>Mobile Phone: +91 9871600938<br />e-mail: duttdigvijay@gmail.com<br />Linkedin: <a href="https://www.linkedin.com/in/duttdigvijay/">@DigvijayDutt</a></p>
           </div>
         </div>
 
